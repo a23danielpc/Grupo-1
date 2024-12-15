@@ -1,6 +1,6 @@
 header{
     display: flex;    
-    height: 50px;
+    height: 80px;
     position: sticky;
     left: 0;
     top: 0;
@@ -37,3 +37,4 @@ header>div{
     margin-right: 2%;
     border-radius: 12px;
 }
+#log

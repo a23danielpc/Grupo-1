@@ -17,6 +17,7 @@
 
   #contactanos {
       color: #ffab00;
+      margin: 2vh;
   }
 
   #question {
@@ -34,7 +35,7 @@
   .label {
       font-size: 2vh;
       color: lightgray;
-      margin-bottom: 1vh;
+      margin: 2vh;
   }
 
   .logo {
