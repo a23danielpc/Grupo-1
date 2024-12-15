@@ -1,43 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Portada con Grid de Contenidos</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="social.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="enlacesInternos">
+        <button class="botonHeader" onclick="irAEnlace('index.html')">
+          Home
+        </button>
+        <button class="botonHeader" onclick="irAEnlace('social.html')">
+          Social
+        </button>
+        <button class="botonHeader" onclick="irAEnlace('contacto.html')">
+          Contacto
+        </button>
+      </div>
+      <div id="logoHeader">
+        <img src="img/DRG_Logo.webp" width="200px" alt="" />
+      </div>
+      <div id="enlacesExtrenos">
+        <button
+          class="botonHeader"
+          onclick="irAEnlace('https\:\/\/store.steampowered.com/app/548430/Deep_Rock_Galactic\/')"
+        >
+          <img class="imagenHeader" src="img/steam.png" alt="steam" />
+        </button>
+        <button
+          class="botonHeader"
+          onclick="irAEnlace('https\:\/\/www.xbox.com/es-ES/games/store/deep-rock-galactic/9nhfvwx1v7qj')"
+        >
+          <img class="imagenHeader" src="img/xbox.png" alt="xbox" />
+        </button>
+        <button
+          class="botonHeader"
+          onclick="irAEnlace('https\:\/\/store.playstation.com/en-dk/concept/233449/')"
+        >
+          <img class="imagenHeader" src="img/playstation.webp" alt="sony" />
+        </button>
+      </div>
+    </header>
     <section class="portada">
-        <div class="social-buttons">
-            <a href="#">Discord</a>
-        </div>
-        <div class="portada-contenido">
-            <h1></h1>
-            <p></p>
-            <button></button>
-        </div>
+      <div class="portada-contenido">
+        <h1>Social</h1>
+        <p>Disfruta compartiendo videos y fotos con la comunidad</p>
+        <button>Subir</button>
+      </div>
     </section>
-    
 
     <section class="contenedor-grid">
-        <div class="grid-item">
-            <img src="ruta-de-tu-imagen1.jpg" alt="Publicación de usuario 1">
-        </div>
-        <div class="grid-item">
-            <video src="ruta-de-tu-video1.mp4" controls></video>
-        </div>
-        <div class="grid-item">
-            <img src="ruta-de-tu-imagen2.jpg" alt="Publicación de usuario 2">
-        </div>
-        <div class="grid-item">
-            <video src="ruta-de-tu-video2.mp4" controls></video>
-        </div>
-        <div class="grid-item">
-            <img src="ruta-de-tu-imagen3.jpg" alt="Publicación de usuario 3">
-        </div>
-        <div class="grid-item">
-            <video src="ruta-de-tu-video3.mp4" controls></video>
-        </div>
+      <div class="grid-item">
+        <img src="./img/captura1.png" alt="Publicación de usuario 1" />
+      </div>
+      <div class="grid-item">
+        <video src="./img/video1.mp4" controls></video>
+      </div>
+      <div class="grid-item">
+        <img src="./img/captura2.png" alt="Publicación de usuario 2" />
+      </div>
+      <div class="grid-item">
+        <video src="./img/video2.mp4" controls></video>
+      </div>
+      <div class="grid-item">
+        <img src="./img/captura3.jpg" alt="Publicación de usuario 3" />
+      </div>
+      <div class="grid-item">
+        <video src="./img/video3.mp4" controls></video>
+      </div>
     </section>
-    
-</body>
+
+    <footer>
+        <p> COPYRIGHT © 2020 GHOST SHIP GAMES </p>
+        <div> <a href="terminos_de_uso">Contactanos</a>
+            <p>|</p> <a href="politica_de_privacidad">Politica de Privacidad</a>
+            <p>|</p> <a href="carpeta_de_prensa">Carpeta de Prensa</a>
+        </div>
+        <p> ALL TRADEMARKS ARE PROPERTY OF THEIR RESPECTIVE OWNERS IN THE US AND OTHER COUNTRIES </p>
+        <p>Angel Moldes | Daniel Portasany | Martín Rey | Hugo Tubio</p>
+    </footer>
+  </body>
 </html>
