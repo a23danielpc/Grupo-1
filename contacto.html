@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="enlacesInternos">
+            <button class="botonHeader">Home</button>
+            <button class="botonHeader">Social</button>
+            <button class="botonHeader">Contacto</button>
+        </div>
+        <div id="enlacesExtrenos">
+            <button class="botonHeader"><img class="imagenHeader" src="img/steam.png" alt="steam"></button>
+            <button class="botonHeader"><img class="imagenHeader" src="img/xbox.png" alt="xbox"></button>
+            <button class="botonHeader"><img class="imagenHeader" src="img/playstation.webp" alt="sony"></button>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <div class="left-col">
+
+        </div>
+        <div class="right-col">
+        
+        
+        <h1 id="contactanos">Contáctanos!</h1>
+        <p id="question">Tienes alguna sugerencia sobre el juego que nos quieras comentar?</p>
+        
+        <form id="contact-form" method="post">
+            <label class="label" for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+            <label class="label" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Tu email" required>
+            <label class="label" for="message">Mensaje</label>
+        <textarea rows="6" placeholder="Escribe aquí tu comentario" id="message" name="message" required></textarea>
+            <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Enviar</button><!--</a>-->
+        
+    </form>
+    <div id="error"></div>
+    <div id="success-msg"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p> COPYRIGHT © 2020 GHOST SHIP GAMES </p>
+        <div> <a href="terminos_de_uso">Contactanos</a>
+            <p>|</p> <a href="politica_de_privacidad">Politica de Privacidad</a>
+            <p>|</p> <a href="carpeta_de_prensa">Carpeta de Prensa</a>
+        </div>
+        <p> ALL TRADEMARKS ARE PROPERTY OF THEIR RESPECTIVE OWNERS IN THE US AND OTHER COUNTRIES </p>
+    </footer>
+
+</body>
