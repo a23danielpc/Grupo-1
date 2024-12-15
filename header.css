@@ -1,0 +1,39 @@
+header{
+    display: flex;    
+    height: 50px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: #212121;
+    z-index: 99;
+}
+header>div{
+    width: 50%;
+}
+#enlacesInternos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#enlacesExtrenos{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.imagenHeader{
+    max-height: 100%;
+}
+.botonHeader{
+    background-color: #212121;
+    color: #ffab00;
+    height: 80%;
+    width: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    border-style: solid;
+    border-color: #ffab00;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 12px;
+}
