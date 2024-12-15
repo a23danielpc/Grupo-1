@@ -4,23 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <title>Contáctanos</title>
     <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="header.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
-
     <header>
         <div id="enlacesInternos">
-            <button class="botonHeader">Home</button>
-            <button class="botonHeader">Social</button>
-            <button class="botonHeader">Contacto</button>
+            <button class="botonHeader" onclick="irAEnlace('index.html')">Home</button>
+            <button class="botonHeader" onclick="irAEnlace('social.html')">Social</button>
+            <button class="botonHeader" onclick="irAEnlace('contacto.html')">Contacto</button>
+        </div>
+        <div id="logoHeader">
+            <img src="img/DRG_Logo.webp" width="200px" alt="">
         </div>
         <div id="enlacesExtrenos">
-            <button class="botonHeader"><img class="imagenHeader" src="img/steam.png" alt="steam"></button>
-            <button class="botonHeader"><img class="imagenHeader" src="img/xbox.png" alt="xbox"></button>
-            <button class="botonHeader"><img class="imagenHeader" src="img/playstation.webp" alt="sony"></button>
+            <button class="botonHeader" onclick="irAEnlace('https\:\/\/store.steampowered.com/app/548430/Deep_Rock_Galactic\/')"><img class="imagenHeader" src="img/steam.png" alt="steam"></button>
+            <button class="botonHeader" onclick="irAEnlace('https\:\/\/www.xbox.com/es-ES/games/store/deep-rock-galactic/9nhfvwx1v7qj')"><img class="imagenHeader" src="img/xbox.png" alt="xbox"></button>
+            <button class="botonHeader" onclick="irAEnlace('https\:\/\/store.playstation.com/en-dk/concept/233449/')"><img class="imagenHeader" src="img/playstation.webp" alt="sony"></button>
         </div>
     </header>
 
@@ -29,23 +35,38 @@
 
         </div>
         <div class="right-col">
-        
-        
-        <h1 id="contactanos">Contáctanos!</h1>
-        <p id="question">Tienes alguna sugerencia o error sobre el juego que nos quieras comentar?</p>
-        
-        <form id="contact-form" method="post">
-            <label class="label" for="name">Nombre</label>
-        <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
-            <label class="label" for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Tu email" required>
-            <label class="label" for="message">Mensaje</label>
-        <textarea rows="6" placeholder="Escribe aquí tu comentario" id="message" name="message" required></textarea>
-            <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Enviar</button><!--</a>-->
-        
-    </form>
-    <div id="error"></div>
-    <div id="success-msg"></div>
+
+
+            <h1 id="contactanos">Contáctanos!</h1>
+            <p id="question">¿Tienes alguna sugerencia o error sobre el juego que nos quieras comentar?</p>
+
+            <form id="contact-form" method="post">
+                <label class="label" for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <label class="label" for="message">Mensaje</label>
+                <textarea rows="6" placeholder="Escribe aquí tu comentario" id="message" name="message"
+                    required></textarea>
+                <button type="submit" id="submit" name="submit">Enviar</button>
+            </form>
+
+            <div class="social-container">
+                <p>Síguenos en nuestras redes sociales!</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-link"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-link"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" class="social-link"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div id="error"></div>
+            <div id="success-msg"></div>
         </div>
     </div>
 
@@ -56,6 +77,11 @@
             <p>|</p> <a href="carpeta_de_prensa">Carpeta de Prensa</a>
         </div>
         <p> ALL TRADEMARKS ARE PROPERTY OF THEIR RESPECTIVE OWNERS IN THE US AND OTHER COUNTRIES </p>
+        <p>Angel Moldes | Daniel Portasany | Martín Rey | Hugo Tubio</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
 </body>
+
+</html>

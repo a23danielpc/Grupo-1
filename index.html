@@ -4,30 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <main>
         <header>
             <div id="enlacesInternos">
-                <button class="botonHeader">Home</button>
-                <button class="botonHeader">Social</button>
-                <button class="botonHeader">Contacto</button>
+                <button class="botonHeader" onclick="irAEnlace('index.html')">Home</button>
+                <button class="botonHeader" onclick="irAEnlace('social.html')">Social</button>
+                <button class="botonHeader" onclick="irAEnlace('contacto.html')">Contacto</button>
             </div>
             <div id="logoHeader">
                 <img src="img/DRG_Logo.webp" width="200px" alt="">
             </div>
             <div id="enlacesExtrenos">
-                <button class="botonHeader"><img class="imagenHeader" src="img/steam.png" alt="steam"></button>
-                <button class="botonHeader"><img class="imagenHeader" src="img/xbox.png" alt="xbox"></button>
-                <button class="botonHeader"><img class="imagenHeader" src="img/playstation.webp" alt="sony"></button>
+                <button class="botonHeader"
+                    onclick="irAEnlace('https\:\/\/store.steampowered.com/app/548430/Deep_Rock_Galactic\/')"><img
+                        class="imagenHeader" src="img/steam.png" alt="steam"></button>
+                <button class="botonHeader"
+                    onclick="irAEnlace('https\:\/\/www.xbox.com/es-ES/games/store/deep-rock-galactic/9nhfvwx1v7qj')"><img
+                        class="imagenHeader" src="img/xbox.png" alt="xbox"></button>
+                <button class="botonHeader"
+                    onclick="irAEnlace('https\:\/\/store.playstation.com/en-dk/concept/233449/')"><img
+                        class="imagenHeader" src="img/playstation.webp" alt="sony"></button>
             </div>
         </header>
         <section id="background_wrapper">
@@ -37,21 +44,39 @@
             </div>
             <div id="characters_section">
                 <div class="character_container" id="perforador">
-                    <img class="character_img" src="img/Driller.webp" alt="">
+                    <a href="#text_before_video">
+                        <img class="character_img" onclick="textoInteresante(0)" src="img/Driller.webp" alt="">
+                    </a>
                 </div>
                 <div class="character_container" id="explorador">
-                    <img class="character_img" src="img/Engineer.webp" alt="">
+                    <a href="#text_before_video">
+                        <img class="character_img" onclick="textoInteresante(1)" src="img/Engineer.webp" alt="">
+                    </a>
                 </div>
                 <div class="character_container" id="ingeniero">
-                    <img class="character_img" src="img/Gunner.webp" alt="">
+                    <a href="#text_before_video">
+                        <img class="character_img" onclick="textoInteresante(2)" src="img/Gunner.webp" alt="">
+                    </a>
                 </div>
                 <div class="character_container" id="artillero">
-                    <img class="character_img" src="img/Scout.webp" alt="">
+                    <a href="#text_before_video">
+                        <img class="character_img" onclick="textoInteresante(3)" src="img/Scout.webp" alt="">
+                    </a>
                 </div>
             </div>
         </section>
         <section id="text_before_video">
-            <h1> Texto Interesante </h1>
+            <h1> ¡Felicitaciones, [NUEVO <del style="color: #00ffab;">esclavo</del> EMPLEADO ENANO]! </h1>
+            <p style="margin: 0 20vw 0 20vw;">
+                ¡Al registrarte en <b style="color: #ffab00;">DEEP ROCK GALACTIC</b> acabas de dar el primer paso para
+                convertirte en un engranaje
+                esencial
+                en la máquina de la corporación minera espacial <b style="color: #00ffab;">MÁS TENAZ</b> de la galaxia
+                conocida!
+            </p>
+            <p style="margin: 20px 20vw 0 20vw; text-align: left;" id="character_description">
+
+            </p>
         </section>
 
         <section id="youtube">
@@ -62,54 +87,116 @@
         </section>
 
         <section id="sec1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <div><img src="img/Hoxxes04B.jpg" alt=""></div>
+            <div id="sec1Text">
+                <h2> Bienvenido a Hoxxes 04B </h2>
+                <p>
+                    Hoxxes IV, un planeta abrasado y bloqueado por mareas que orbita la estrella azul Creus, es el
+                    escenario principal de Deep Rock Galactic. Destaca por sus ricos depósitos de materiales preciosos y
+                    su entorno extremadamente hostil. Solo la minera Deep Rock Galactic, conocida por su negligencia en
+                    seguridad, opera allí, ofreciendo altos sueldos y bonificaciones a quienes se atrevan a explorar sus
+                    peligrosas profundidades.
+                </p>
 
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-
-            <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra,
-                est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+                <p>
+                    Hoxxes IV está plagado de peligros como tormentas electromagnéticas, anomalías gravitatorias,
+                    inestabilidad tectónica, mares de ácido sulfúrico y un ecosistema ferozmente hostil. La radiación
+                    constante de Creus y los microorganismos dejados por otras corporaciones hacen que las criaturas
+                    sean aún más agresivas, y se rumorea que algo aún más siniestro las está afectando.
+                </p>
+            </div>
         </section>
 
         <section id="sec2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <h2> TRABAJAR EN DEEP ROCK GALACTIC </h2>
 
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+            <h3>Pagos generosos:</h3>
+            <div class="sec2_containerOdd">
+                <p>
+                    Los salarios son más altos que los estándares galácticos,
+                    acompañados de bonificaciones por completar misiones peligrosas.
+                </p>
+                <img src="img/cuevas.png" alt="" height="300px">
+            </div>
+            <hr>
+            <h3>Oportunidades de crecimiento profesional:</h3>
+            <div class="sec2_containerEven">
+                <p>
+                    Si sobrevives, tu reputación como minero experto crecerá rápidamente.
+                </p>
+                <img src="img/level.png" alt="" height="300px">
+            </div>
+            <hr>
+            <h3>Tecnología avanzada:</h3>
+            <div class="sec2_containerOdd">
+                <p>
+                    Equipamiento de vanguardia diseñado para ayudarte a realizar el trabajo,
+                    desde plataformas de perforación personalizadas hasta armas de última generación.
+                </p>
+                <img src="img/nextLevel.png" alt="" height="300px">
+            </div>
+            <hr>
+            <h3>Compañerismo:</h3>
+            <div class="sec2_containerEven">
+                <p>
+                    Ningún minero trabaja solo;
+                    los equipos están formados por profesionales leales que siempre están dispuestos a cubrirte la
+                    espalda.
+                </p>
+                <img src="img/trabajoEnEquipo.png" alt="" height="300px">
+            </div>
 
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-
-            <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra,
-                est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
         </section>
 
         <section id="sec3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <table id="table" border="1">
+                <caption>Requisito del Sistema</caption>
+                <thead>
+                    <tr>
+                        <th>Requisito</th>
+                        <th>Mínimos</th>
+                        <th>Recomendados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sistema operativo</td>
+                        <td>Windows 7 (64-bit)</td>
+                        <td>Windows 10 (64-bit)</td>
+                    </tr>
+                    <tr>
+                        <td>Procesador</td>
+                        <td>2.4 GHz Dual Core</td>
+                        <td>2.4 GHz Quad Core</td>
+                    </tr>
+                    <tr>
+                        <td>Memoria</td>
+                        <td>6 GB de RAM</td>
+                        <td>8 GB de RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Gráficos</td>
+                        <td>NVIDIA GeForce GTX 460 o AMD Radeon HD 5770 /w 1GB VRAM</td>
+                        <td>NVIDIA 970 / AMD Radeon 290</td>
+                    </tr>
+                    <tr>
+                        <td>DirectX</td>
+                        <td>Versión 11</td>
+                        <td>Versión 11</td>
+                    </tr>
+                    <tr>
+                        <td>Red</td>
+                        <td>Conexión de banda ancha a Internet</td>
+                        <td>Conexión de banda ancha a Internet</td>
+                    </tr>
+                    <tr>
+                        <td>Almacenamiento</td>
+                        <td>3 GB de espacio disponible</td>
+                        <td>3 GB de espacio disponible</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-
-            <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra,
-                est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
         </section>
     </main>
 
@@ -120,6 +207,7 @@
             <p>|</p> <a href="carpeta_de_prensa">Carpeta de Prensa</a>
         </div>
         <p> ALL TRADEMARKS ARE PROPERTY OF THEIR RESPECTIVE OWNERS IN THE US AND OTHER COUNTRIES </p>
+        <p>Angel Moldes | Daniel Portasany | Martín Rey | Hugo Tubio</p>
     </footer>
 
 </body>

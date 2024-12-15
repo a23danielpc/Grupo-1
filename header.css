@@ -1,40 +1,85 @@
-header{
+header {
     display: flex;    
-    height: 80px;
+    height: 100px;
     position: sticky;
     left: 0;
     top: 0;
-    background-color: #212121;
+    background-color: #000000;
     z-index: 99;
+    border-bottom: solid #ffab00 1px;
 }
-header>div{
+
+header > div {
     width: 50%;
 }
-#enlacesInternos{
+
+#enlacesInternos {
     display: flex;
     justify-content: start;
     align-items: center;
 }
-#enlacesExtrenos{
+
+#enlacesExtrenos {
     display: flex;
     justify-content: end;
     align-items: center;
 }
-.imagenHeader{
+
+.imagenHeader {
     max-height: 100%;
 }
-.botonHeader{
-    background-color: #212121;
+
+.botonHeader {
+    background-color: #000000;
     color: #ffab00;
     height: 80%;
-    width: 20%;
-    font-size: 25px;
+    width: 10vw;
+    font-size: 2vw;
     font-weight: 700;
     font-family: 'Quicksand', sans-serif;
-    border-style: solid;
-    border-color: #ffab00;
+    border: none;
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
 }
-#log
+
+.botonHeader::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffab00;
+    transition: width 0.3s ease-in-out;
+}
+
+.botonHeader:hover::after {
+    width: 100%;
+}
+
+#logoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoHeader img {
+    transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+#logoHeader img:hover {
+    transform: scale(1.1);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #ffab00, transparent);
+}
+
